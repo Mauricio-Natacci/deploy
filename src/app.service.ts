@@ -4,6 +4,6 @@ import { Response } from 'express';
 @Injectable()
 export class AppService {
   getHello(@Res() res: Response) {
-    res.send('Hello World!');
+    res.json({ message: 'Hello World!' });
   }
 }
